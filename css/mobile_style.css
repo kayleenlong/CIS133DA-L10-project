@@ -1,1 +1,107 @@
 
+/*
+Author: Kay2261076
+Course: CIS133DA
+Section: 27531
+Lesson: 10
+This stylesheet loads on screens 449px and smaller.
+*/
+
+/* Mobile body and header adjustments */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin: 0;
+}
+
+header {
+    background: black url("../images/background.jpg") no-repeat center;
+    background-size: cover;
+    color: white;
+}
+
+/* Mobile navigation: stack links so they are easy to tap */
+h1 {
+    font-size: 24px;
+    padding: 75px 10px 25px;
+    text-align: center;
+}
+
+nav {
+    position: static;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: #2d3437;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    float: none;
+    width: 100%;
+}
+
+nav a {
+    display: block;
+    padding: 14px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+nav .active {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Main content uses the full mobile screen width */
+main {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0;
+}
+
+/* Cards stack vertically and fill the available width */
+.card {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0;
+    min-height: 0;
+    overflow: auto;
+}
+
+.card img {
+    float: left;
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    background-color: #E1693D;
+    padding: 8px;
+    margin-right: 5px;
+}
+
+.card h2,
+.card p {
+    margin: 0;
+    padding: 5px;
+    font-size: 14px;
+}
+
+/* Footer color identifies the mobile breakpoint */
+footer {
+    background-color: #135367;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+}
+
