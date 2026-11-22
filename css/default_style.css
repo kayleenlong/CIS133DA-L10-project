@@ -1,8 +1,12 @@
-/** 
-    Author: 
-    Course: 
-    Lesson: 
-**/
+
+/*
+Author: Kay2261076
+Course: CIS133DA
+Section: 27531
+Lesson: 10
+Breakpoint: Desktop - 901px and wider
+*/
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
@@ -16,7 +20,7 @@ body {
 
 /* Header Styles */
 header {
-    background: black url(../images/background.jpg) no-repeat center;
+    background: black url("../images/background.jpg") no-repeat center;
     background-size: cover;
     color: white;
     margin: 0;
@@ -31,7 +35,6 @@ h1 {
 }
 
 /* Navigation Bar Styles */
-
 nav ul {
     list-style-type: none;
     background-color: #2d3437;
@@ -67,6 +70,7 @@ nav .active {
     color: #000000;
 }
 
+/* Navigation stays at the top of the desktop page */
 nav {
     top: 0;
     position: absolute;
@@ -80,6 +84,41 @@ main {
     box-sizing: border-box;
     display: block;
     margin: 0 auto;
+}
+
+/* Service Card Styles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin: 15px;
+    width: calc(50% - 70px);
+    min-height: 180px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.card img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    background-color: #E1693D;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+.card h2,
+.card p {
+    margin: 0;
+    padding: 5px;
+    font-size: 16px;
+}
+
+/* Clear the floated cards */
+main::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 /* Footer Styles */
