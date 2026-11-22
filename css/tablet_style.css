@@ -1,1 +1,115 @@
 
+/*
+Author: Kay2261076
+Course: CIS133DA
+Section: 27531
+Lesson: 10
+This stylesheet loads on screens from 450px to 900px.
+*/
+
+/* Tablet body and header adjustments */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin: 0;
+}
+
+header {
+    background: black url("../images/background.jpg") no-repeat center;
+    background-size: cover;
+    color: white;
+}
+
+h1 {
+    font-size: 30px;
+    padding: 75px 10px 40px;
+    text-align: center;
+}
+
+/* Tablet navigation adjustments */
+nav {
+    position: static;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: #2d3437;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav li {
+    float: none;
+}
+
+nav a {
+    display: block;
+    padding: 15px 12px;
+    color: white;
+    text-decoration: none;
+}
+
+nav .active {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Main content fills the tablet viewport */
+main {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 0;
+}
+
+/* Two cards fit side-by-side on tablets */
+.card {
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+    min-height: 230px;
+    float: left;
+}
+
+.card img {
+    float: left;
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    background-color: #E1693D;
+    padding: 8px;
+    margin-right: 5px;
+}
+
+.card h2,
+.card p {
+    margin: 0;
+    padding: 5px;
+    font-size: 15px;
+}
+
+/* Clear floated cards */
+main::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Footer color identifies the tablet breakpoint */
+footer {
+    background-color: #8A4F7D;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+}
+
